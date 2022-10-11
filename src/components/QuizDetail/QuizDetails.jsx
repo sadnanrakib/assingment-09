@@ -5,26 +5,90 @@ import './QuizDetails.css'
 import { useLoaderData } from 'react-router-dom';
 
 const QuizDetails = () => {
-    const notify = () => toast("Wow so easy!");
+
+    const notify = () => toast("Wow so easy!",{
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });
+
+    const unNotify = () => toast("worng Ans!",{
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });
+
     const quizs = useLoaderData();
-    const[quiz,setQuiz]=useState([])
-    // console.log(quizs)
+    console.log(quizs)
+    const[ans,setAns]=useState("")
+    console.log("ans",ans);
+    const handleQuiz=(e)=>{
+            const newAns=(e.target.value);
+            setAns(newAns)
+    }
     return (
         <div className='quiz'>
             {
                 quizs.data.questions.map(quiz=>{ return (
+                    
                     <div className='quiz-option'>
+                       
+                       <section className='container'>
+                                             
+                        <div>
+                            <h4>{quiz.question}</h4>
+                        </div>
+
+                        <div>
+                          <button className='btn'>X</button>
+                       </div>
+                       </section>
                         
-                        <h4>{quiz.question}</h4>
 
                         {
                         quiz.options.map(question=>{return(
                             <div className='quiz-options'>
 
                         
-                          <input type="radio" onClick={notify} name="Answer" id="" value={question} />
+                             {/* if(ans===quiz.correctAnswer){
+                                alert("okk")
+                            }
+                            else{
+                                alert("error")
+                            } */}
+                            
+                        
+                          <input type="radio" onClick={ans===quiz.correctAnswer?notify:unNotify} onChange={handleQuiz} name="Answer" id="" value={question} />
+                                  {console.log("CorrectAns",quiz.correctAnswer)}
                            <label htmlFor="">{question}</label>
-                           <ToastContainer />
+
+
+                        
+                            
+                               <ToastContainer
+                               position="top-center"
+                               autoClose={5000}
+                               hideProgressBar={false}
+                               newestOnTop={false}
+                               closeOnClick
+                               rtl={false}
+                               pauseOnFocusLoss
+                               draggable
+                               pauseOnHover
+                               theme="light"
+                               
+                               />
+                        
                          
                           </div>
                             

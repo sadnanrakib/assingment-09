@@ -25,9 +25,9 @@ const About = () => {
 
 ]
     return (
-        <div className='about'>
+        <div>
            <h2>Chart By Total Quiz & Id</h2>
-            <LineChart
+            <LineChart className="about"
                         width={500}
                         height={300}
                         data={data}

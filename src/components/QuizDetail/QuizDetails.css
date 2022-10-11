@@ -1,5 +1,5 @@
 .quiz-option{
-    
+   
     border-radius: 15px;
     margin: 20px;
     padding: 20px;
@@ -17,3 +17,13 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+
+.btn{
+    
+}
+
+.container{
+    display: flex;
+    
+}
+

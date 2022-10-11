@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className='home-container'>
              <div style={{ 
-                backgroundImage: `url(https://img.freepik.com/free-vector/quiz-neon-sign_1262-19629.jpg?w=2000)`,
+                backgroundImage: `url(https://web.programming-hero.com/thumbnail.png)`,
                 padding:'200px',
                 backgroundSize: 'cover',
                 overflow: 'hidden',
@@ -16,7 +16,7 @@ const Home = () => {
         
         
                 }}>
-      <h3 className='color'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a similique dolore deserunt unde inventore expedita ut doloremque doloribus totam recusandae, saepe dignissimos, quis sequi neque omnis eum consequuntur quisquam.</h3>
+      {/* <h3 className='color'>You can create a question in a quiz that does not include answers or point values. A text (no question) quiz question can be used as a preface to a quiz or a group of questions within a quiz. You may wish to use this type of question to include a passage of text, image, or video that will be referenced in subsequent questions..</h3> */}
     </div>
            <div className='quiz-container'> 
            {

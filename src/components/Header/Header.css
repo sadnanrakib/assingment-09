@@ -12,3 +12,15 @@
     margin-right: 15px;
     text-decoration: none;
 }
+
+@media only screen and (max-width:425px) {
+    .header{
+        align-items: center;
+        justify-content: space-around;
+        width: 1000px;
+        padding: 15px;
+        background-color:aliceblue;
+        box-shadow: 2px 2px 2px rgb(212, 209, 209);
+    
+    }
+}
