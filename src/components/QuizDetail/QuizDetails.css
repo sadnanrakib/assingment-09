@@ -1,0 +1,19 @@
+.quiz-option{
+    
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.quiz-options{
+    
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 15px;
+}
+
+.quiz{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}

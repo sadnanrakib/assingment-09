@@ -22,7 +22,7 @@ function App() {
         },
         
         {
-          path:'home',
+          path:'/home',
           loader:()=>fetch('quiz.json'),
           element:<Home></Home>
         },
@@ -36,10 +36,10 @@ function App() {
           element:<Blog></Blog>
         },
         {
-          path:'/quiz/:quizId',
+          path:'/quiz/:id',
           loader:async({params})=>{
-            // console.log(params.quizId);
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizid}`)
+            // console.log(params.id);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
           },
           element:<QuizDetails></QuizDetails>
         },
