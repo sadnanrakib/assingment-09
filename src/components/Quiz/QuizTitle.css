@@ -1,0 +1,38 @@
+.title{
+    border: 1px solid slategray;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 2px 2px 2px aliceblue;
+    
+    
+}
+
+.title img{
+    height: 250px;
+    
+}
+
+.image{
+    background-color: darkgrey;
+    margin-bottom: 30px;
+    width: 0 auto;
+    
+}
+
+.flex{
+    
+    justify-content: space-between;
+}
+
+.btn{
+    background-color:blueviolet;
+    border: none;
+    padding: 10px;
+    
+    
+}
+
+.btn a{
+    text-decoration: none;
+    color: aliceblue;
+}
