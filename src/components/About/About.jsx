@@ -26,7 +26,7 @@ const About = () => {
 ]
     return (
         <div>
-           <h2>Chart By Total Quiz & Id</h2>
+           <h2>Chart By Total Quiz</h2>
             <LineChart className="about"
                         width={500}
                         height={300}
@@ -44,9 +44,8 @@ const About = () => {
                         <YAxis />
                         <Tooltip />
                         <Legend />
-                        <Line type="monotone" dataKey="id" stroke="#8884d8"
-        activeDot={{ r: 8 }}
-      />
+                      
+      
                         <Line type="monotone" dataKey="total" stroke="#82ca9d" />
         </LineChart>
         </div>
