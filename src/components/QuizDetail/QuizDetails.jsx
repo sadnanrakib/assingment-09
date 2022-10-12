@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { eye } from '@heroicons/react/24/solid'
 import "./QuizDetails.css";
 import { useLoaderData } from "react-router-dom";
 
@@ -52,11 +53,14 @@ const QuizDetails = () => {
           <div className="quiz-option">
             <section className="container">
               <div>
+                
                 <h4>{quiz.question}</h4>
               </div>
 
               <div>
-                <button className="btn">X</button>
+              <button className="btn">
+                
+              </button>
               </div>
             </section>
             {quiz.options.map((question) => {
@@ -67,7 +71,7 @@ const QuizDetails = () => {
                     type="radio"
                     onChange={(e) => handleQuiz(e, quiz.correctAnswer)}
                     name="Answer"
-                    id=""
+                    id="click"
                     value={question}
                   />
                   <label htmlFor="">{question}</label>

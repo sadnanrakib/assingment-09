@@ -19,11 +19,19 @@
 }
 
 .btn{
-    
+  cursor: pointer;
+  margin-left: 15px;
+   
 }
 
 .container{
     display: flex;
+    /* align-items: center; */
+    justify-content:space-around;
     
+}
+
+#click{
+    cursor: pointer;
 }
 

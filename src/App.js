@@ -4,7 +4,7 @@ import Main from './layout/Main';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Error from './components/ErrorPage/Error';
-import About from './components/About/About';
+import About from './components/About/Statistics';
 import QuizDetails from './components/QuizDetail/QuizDetails';
 
 function App() {
