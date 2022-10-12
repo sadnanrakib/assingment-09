@@ -13,7 +13,7 @@ Live Link :https://gleeful-clafoutis-29ebc8.netlify.app/quiz/1
 
 
 ## Project build by
-1.React-create-app
-2.react-roter-dom
-3.vanila css
-4.hero icon
+
+https://create-react-app.dev/docs/getting-started/
+https://heroicons.com/
+https://www.npmjs.com/package/react-toastify
