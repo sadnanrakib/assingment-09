@@ -18,9 +18,11 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-.btn{
+.btn1{
+    
   cursor: pointer;
   margin-left: 15px;
+  
    
 }
 

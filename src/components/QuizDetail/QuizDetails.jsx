@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { eye } from '@heroicons/react/24/solid'
+import { AiFillEye } from 'react-icons/ai';
 import "./QuizDetails.css";
 import { useLoaderData } from "react-router-dom";
 
@@ -33,11 +33,11 @@ const QuizDetails = () => {
     
 
   const quizs = useLoaderData();
-  console.log(quizs);
+  // console.log(quizs);
   const [ans, setAns] = useState("");
-  console.log("ans", ans);
+  // console.log("ans", ans);
   const handleQuiz = (e, correctAnswer) => {
-    console.log("correctAnswer", correctAnswer, e.target.value);
+    // console.log("correctAnswer", correctAnswer, e.target.value);
     const newAns = e.target.value;
     setAns(newAns)
     if (newAns == correctAnswer) {
@@ -51,26 +51,42 @@ const QuizDetails = () => {
 
   const ansShow = (correctAnswer)=>{
    if (ans && ans !==correctAnswer){
-  alert(correctAnswer)
+    toast((correctAnswer), {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   setAns("")
 }
   }
   
   return (
+    <div>
+      <h2>{quizs.data.name} Quiz</h2>
     <div className="quiz">
+       
       {quizs.data.questions.map((quiz) => {
+        
         return (
+          
           <div className="quiz-option">
+            
             <section className="container">
+            
               <div>
-                
+              
                 <h4>{quiz.question}</h4>
               </div>
 
-              <div>
-              <button onClick={()=>ansShow(quiz.correctAnswer)} className="btn">
-                click
-              </button>
+              <div className="btn1">
+              
+              <AiFillEye onClick={()=>ansShow(quiz.correctAnswer)} />
+              
               </div>
             </section>
             {quiz.options.map((question) => {
@@ -105,6 +121,7 @@ const QuizDetails = () => {
           theme="light"
         />
       </>
+    </div>
     </div>
   );
 };

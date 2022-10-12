@@ -12,8 +12,9 @@
 }
 
 .color{
-    color:black;
+    color:orange;
     margin-top: -10px;
+    
 }
 
 @media only screen and (max-width:425px){
