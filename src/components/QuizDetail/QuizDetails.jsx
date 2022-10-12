@@ -30,6 +30,8 @@ const QuizDetails = () => {
       theme: "light",
     });
 
+    
+
   const quizs = useLoaderData();
   console.log(quizs);
   const [ans, setAns] = useState("");
@@ -37,6 +39,7 @@ const QuizDetails = () => {
   const handleQuiz = (e, correctAnswer) => {
     console.log("correctAnswer", correctAnswer, e.target.value);
     const newAns = e.target.value;
+    setAns(newAns)
     if (newAns == correctAnswer) {
       notify();
     } else {
@@ -45,6 +48,13 @@ const QuizDetails = () => {
     //
     //
   };
+
+  const ansShow = (correctAnswer)=>{
+   if (ans && ans !==correctAnswer){
+  alert(correctAnswer)
+  setAns("")
+}
+  }
   
   return (
     <div className="quiz">
@@ -58,8 +68,8 @@ const QuizDetails = () => {
               </div>
 
               <div>
-              <button className="btn">
-                
+              <button onClick={()=>ansShow(quiz.correctAnswer)} className="btn">
+                click
               </button>
               </div>
             </section>
