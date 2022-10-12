@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className='home-container'>
              <div style={{ 
-                backgroundImage: `url(https://web.programming-hero.com/thumbnail.png)`,
+                backgroundImage: `url(https://www.itprotoday.com/sites/itprotoday.com/files/programming.jpg)`,
                 padding:'200px',
                 backgroundSize: 'cover',
                 overflow: 'hidden',
@@ -16,7 +16,7 @@ const Home = () => {
         
         
                 }}>
-      {/* <h3 className='color'>You can create a question in a quiz that does not include answers or point values. A text (no question) quiz question can be used as a preface to a quiz or a group of questions within a quiz. You may wish to use this type of question to include a passage of text, image, or video that will be referenced in subsequent questions..</h3> */}
+      <h3 className='color'>Software Developer. Developers of software for smartphones, tablets, and other mobile devices are in charge of creating and updating programmes...</h3>
     </div>
            <div className='quiz-container'> 
            {
