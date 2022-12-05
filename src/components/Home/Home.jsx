@@ -16,7 +16,7 @@ const Home = () => {
         
         
                 }}>
-      <h3 className='color'>Software Developer. Developers of software for smartphones, tablets, and other mobile devices are in charge of creating and updating programmes...</h3>
+      <h3 className='color'>Software Developer. Developers of software for smartphone, tablets, and other mobile devices are in charge of creating and updating programmes...</h3>
     </div>
            <div className='quiz-container'> 
            {

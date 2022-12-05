@@ -40,7 +40,7 @@ const QuizDetails = () => {
     // console.log("correctAnswer", correctAnswer, e.target.value);
     const newAns = e.target.value;
     setAns(newAns)
-    if (newAns == correctAnswer) {
+    if (newAns === correctAnswer) {
       notify();
     } else {
       unNotify();
@@ -66,7 +66,7 @@ const QuizDetails = () => {
   }
   
   return (
-    <div>
+    <div className="option">
       <h2>{quizs.data.name} Quiz</h2>
     <div className="quiz">
        
